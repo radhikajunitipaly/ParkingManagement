@@ -4,6 +4,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/tests"/>
         <property name="java-output-path" value="/parkingManagement/build/classes"/>
-        <property name="context-root" value="parkingManagement"/>
+        <property name="context-root" value="dropdoxproject"/>
     </wb-module>
 </project-modules>

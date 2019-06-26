@@ -9,17 +9,13 @@
 </head>
 <body>
 <h1>Login page</h1>
-<form action="loginUserController" method="post">
-<table>
-<tr>
-<td>Username:</td><td><input type="text" id = "login_username" name="login_username"></td>
-<td>
-<input value="<c:out value='${incorrectpass}'/>" id = "password_errorMessage" type="text" style ="background-color: white; color: red; border: none; width: 800px" disabled="disabled" maxlength="60"></td></tr>
-<tr>
-<td>Password:</td><td><input type="password" id = "login_password" name="login_password"></td></tr>
-<tr><td><input id="login_button" type="submit" value="Login"></td></tr>
-</table>
-<input value="<c:out value='${errorMessage}'/>" id = "login_errorMessage" type="text" style ="background-color: white; color: red; border: none; width: 800px" disabled="disabled" maxlength="60"> 
+<form action="loginUserController" method="post" enctype="multipart/form-data">
+			<p>What's your name?</p>
+			<input type="text" name="name" value="Radhika">
+			<p></p>
+			<input type="file" name="fileToUpload">
+			<br/><br/>
+			<input type="submit" value="Submit">
 </form>
 
 <a href="register_user.jsp">Register here !!</a>
